@@ -13,6 +13,10 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.Dictionary input:focus {
+  border-color: rgb(54, 54, 54);
+}
+
 .Dictionary .btn {
   margin: 1rem;
   color: rgb(54, 54, 54);

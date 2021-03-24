@@ -35,7 +35,7 @@ export default function Dictionary() {
         <button
           type="submit"
           value="Search"
-          className="col d-flex btn btn-primary SearchButton"
+          className="col d-flex btn SearchButton"
         >
           Search
         </button>
