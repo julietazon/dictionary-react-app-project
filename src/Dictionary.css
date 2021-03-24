@@ -165,14 +165,28 @@
   display: flex;
   text-align: left;
 }
+
 .Images ul {
   display: flex;
   flex-flow: row wrap;
+  flex-wrap: wrap;
+  flex-grow: 3;
   justify-content: space-around;
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .Images li {
-  padding: 5rem;
+  flex-grow: 1;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.Images img {
+  width: 11rem;
+  height: 10rem;
+  box-shadow: 0px 2px 6px 1px rgba(167, 167, 167, 0.295);
+  border-radius: 0.1rem;
+  object-fit: cover;
 }

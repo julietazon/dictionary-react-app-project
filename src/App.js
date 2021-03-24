@@ -10,6 +10,7 @@ import searchIcon from "./img/searchicon.webp";
 function App() {
   let [keyword, setKeyword] = useState("");
   let [result, setResult] = useState(null);
+  let [images, setImages] = useState(null);
 
   function handleDictionaryResponse(response) {
     setResult(response.data[0]);
@@ -17,6 +18,7 @@ function App() {
 
   function handleImageResponse(response) {
     console.log(response.data);
+    setImages(response.data.photos);
   }
 
   function search(event) {
@@ -70,7 +72,7 @@ function App() {
           <MeaningResult result={result} />
         </aside>
         <aside className="aside aside-2">
-          <Images />
+          <Images images={images} />
         </aside>
         <footer className="footer">
           <small>
