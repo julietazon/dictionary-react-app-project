@@ -42,7 +42,7 @@
   display: flex;
   text-align: left;
 }
-.MeaningResult ul {
+.Meaning ul {
   list-style: none;
   display: flex;
   flex-flow: row wrap;
@@ -50,27 +50,23 @@
   margin: 0;
   justify-content: space-around;
   margin-bottom: 3rem;
+  font-weight: 500;
 }
 
-.Meaning .RelatedWords {
-}
 .Meaning .MeaningWrapper {
   padding: 1rem;
 }
-
 .Meaning .WordMeaningType {
   font-weight: 400;
 }
 
-.Meaning .WordMeaning {
-  font-weight: 200;
-}
-
 .Meaning .WordMeaning .Definition {
+  font-weight: 200;
   margin-bottom: 1;
 }
 
 .Meaning .WordMeaning .Example {
+  font-weight: 200;
   font-style: italic;
 }
 
