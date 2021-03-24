@@ -5,6 +5,7 @@ import MeaningResult from "./MeaningResult";
 import Images from "./Images";
 import "./App.css";
 import "./Dictionary.css";
+import searchIcon from "./img/searchicon.webp";
 
 function App() {
   let [keyword, setKeyword] = useState("");
