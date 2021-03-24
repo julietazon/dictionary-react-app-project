@@ -30,17 +30,20 @@
   .header {
     order: 1;
   }
-  .main {
+  .search {
     order: 2;
   }
-  .aside-1 {
+  .main {
     order: 3;
   }
-  .aside-2 {
+  .aside-1 {
     order: 4;
   }
-  .footer {
+  .aside-2 {
     order: 5;
+  }
+  .footer {
+    order: 6;
   }
 }
 
