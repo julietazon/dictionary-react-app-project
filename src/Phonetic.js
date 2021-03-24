@@ -10,7 +10,7 @@ export default function Phonetic(props) {
   return (
     <div className="Phonetic">
       <button className="btn PhoneticButton" onClick={start}>
-        <img src={audioIcon} />
+        <img src={audioIcon} alt="megaphone" />
       </button>
     </div>
   );

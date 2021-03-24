@@ -59,7 +59,7 @@ function App() {
                   autoFocus="on"
                   className="d-flex btn default SearchButton"
                 >
-                  <img src={searchIcon} />
+                  <img src={searchIcon} alt="magnifying glass" />
                 </button>
               </form>
             </div>
