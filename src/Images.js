@@ -8,9 +8,9 @@ export default function Images(props) {
           {props.images.map(function (image, index) {
             return (
               <li key={index}>
-                <a href={image.src.original} target="_blank">
-                  <img src={image.src.landscape} />
-                </a>
+                <span onClick={() => window.open(image.src.original, "_blank")}>
+                  <img src={image.src.landscape} alt="related to the search" />
+                </span>
               </li>
             );
           })}
