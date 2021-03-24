@@ -27,17 +27,20 @@
   .main {
     flex: 3 0px;
   }
-  .main {
+  .header {
     order: 1;
   }
-  .aside-1 {
+  .main {
     order: 2;
   }
-  .aside-2 {
+  .aside-1 {
     order: 3;
   }
-  .footer {
+  .aside-2 {
     order: 4;
+  }
+  .footer {
+    order: 5;
   }
 }
 

@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
       <div className="wrapper">
+        <header className="header">
+          <h1>Dictionary</h1>
+        </header>
         <main className="main">
-          <header className="">
-            <h1>Dictionary</h1>
-          </header>
           <Dictionary />
         </main>
         <aside className="aside aside-1"></aside>
