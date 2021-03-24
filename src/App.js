@@ -1,10 +1,31 @@
-import Dictionary from "./Dictionary";
-import Word from "./Word";
-import Meaning from "./Meaning";
+import React, { useState } from "react";
+import axios from "axios";
+import WordResult from "./WordResult";
+import MeaningResult from "./MeaningResult";
 import Images from "./Images";
 import "./App.css";
+import "./Dictionary.css";
 
 function App() {
+  let [keyword, setKeyword] = useState("");
+  let [result, setResult] = useState(null);
+
+  function handleResponse(response) {
+    console.log(response.data[0]);
+    setResult(response.data[0]);
+  }
+
+  function search(event) {
+    event.preventDefault();
+
+    // documentation: https://dictionaryapi.dev/
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleKeywordChange(event) {
+    setKeyword(event.target.value);
+  }
   return (
     <div className="App">
       <div className="wrapper">
@@ -12,13 +33,30 @@ function App() {
           <h1>Dictionary</h1>
         </header>
         <main className="search">
-          <Dictionary />
+          <div className="row d-flex justify-content-end Dictionary">
+            <form className="col-sm-5 d-flex form" onSubmit={search}>
+              <input
+                type="search"
+                className="form-control"
+                autoComplete="off"
+                autoFocus="on"
+                onChange={handleKeywordChange}
+              />
+              <button
+                type="submit"
+                value="Search"
+                className="col d-flex btn SearchButton"
+              >
+                Search
+              </button>
+            </form>
+          </div>
         </main>
         <main className="main">
-          <Word />
+          <WordResult result={result} />
         </main>
         <aside className="aside aside-1">
-          <Meaning />
+          <MeaningResult result={result} />
         </aside>
         <aside className="aside aside-2">
           <Images />
@@ -53,5 +91,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

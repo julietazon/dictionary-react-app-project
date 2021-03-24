@@ -4,19 +4,15 @@
   letter-spacing: 0.3rem;
   font-weight: 600;
 }
-
 .Dictionary {
 }
-
 .Dictionary .form-control {
   margin: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
 .Dictionary input:focus {
   border-color: rgb(190, 190, 190);
 }
-
 .Dictionary .btn {
   margin: 1rem;
   color: rgb(54, 54, 54);
@@ -25,50 +21,44 @@
   transition: 200ms ease-in-out, border-color 200ms ease-in-out;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
 .Dictionary .btn:hover {
   background: rgb(54, 54, 54);
   color: rgb(190, 190, 190);
 }
-
 .Word {
   padding: 1rem;
   letter-spacing: 0.2rem;
 }
-
 .Word h2 {
   font-size: 2.5em;
   font-weight: 600;
 }
-
 .Word h3 {
   font-size: 1.2rem;
   font-weight: 200;
 }
-
 .Word h2,
 .Word h3 {
   display: flex;
   text-align: left;
 }
-
-.Meaning ul {
+.MeaningResult ul {
   list-style: none;
   display: flex;
   flex-flow: row wrap;
   padding: 0;
   margin: 0;
   justify-content: space-around;
+  margin-bottom: 3rem;
 }
 
 .Meaning .RelatedWords {
 }
-
 .Meaning .MeaningWrapper {
   padding: 1rem;
 }
 
-.Meaning .MeaningType {
+.Meaning .WordMeaningType {
   font-weight: 400;
 }
 
@@ -76,11 +66,18 @@
   font-weight: 200;
 }
 
+.Meaning .WordMeaning .Definition {
+  margin-bottom: 1;
+}
+
+.Meaning .WordMeaning .Example {
+  font-style: italic;
+}
+
 .Meaning p {
   display: flex;
   text-align: left;
 }
-
 .Images ul {
   display: flex;
   flex-flow: row wrap;
@@ -89,7 +86,6 @@
   margin: 0;
   list-style: none;
 }
-
 .Images li {
   padding: 5rem;
 }
