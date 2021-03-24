@@ -11,6 +11,7 @@ export default function Dictionary() {
       <form className="form">
         <input
           type="search"
+          className="form-control"
           autoComplete="off"
           autoFocus="on"
           onSubmit={search}
