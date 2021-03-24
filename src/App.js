@@ -32,28 +32,28 @@ function App() {
       <div className="wrapper">
         <header className="header">
           <h1>Dictionary</h1>
+          <main className="search">
+            <div className="d-flex justify-content-center Dictionary">
+              <form className="d-flex form" onSubmit={search}>
+                <input
+                  type="search"
+                  className="form-control"
+                  autoComplete="off"
+                  autoFocus="on"
+                  onChange={handleKeywordChange}
+                />
+                <button
+                  type="submit"
+                  value="Search"
+                  autoFocus="on"
+                  className="d-flex btn default SearchButton"
+                >
+                  <img src={searchIcon} />
+                </button>
+              </form>
+            </div>
+          </main>
         </header>
-        <main className="search">
-          <div className="d-flex justify-content-center Dictionary">
-            <form className="d-flex form" onSubmit={search}>
-              <input
-                type="search"
-                className="form-control"
-                autoComplete="off"
-                autoFocus="on"
-                onChange={handleKeywordChange}
-              />
-              <button
-                type="submit"
-                value="Search"
-                autoFocus="on"
-                className="d-flex btn default SearchButton"
-              >
-                <img src={searchIcon} />
-              </button>
-            </form>
-          </div>
-        </main>
         <main className="main">
           <WordResult result={result} />
         </main>

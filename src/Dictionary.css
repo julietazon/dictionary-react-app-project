@@ -4,16 +4,21 @@
   letter-spacing: 0.3rem;
   font-weight: 600;
 }
+
+.header {
+  margin: 1rem;
+  padding: 3rem 0 3rem 0;
+}
+
 .Dictionary .form {
   flex: 0.5;
   flex-wrap: wrap;
   position: relative;
+  margin-top: 2rem;
 }
 
 .Dictionary .form-control {
-  margin: 1rem;
   height: 3rem;
-  /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
 }
 
 .Dictionary input {
@@ -62,7 +67,6 @@
   bottom: 0;
   right: 0;
   padding: 0;
-  margin: 1rem;
   border-radius: 10rem;
 }
 
