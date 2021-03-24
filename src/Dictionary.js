@@ -2,5 +2,17 @@ import React from "react";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  return <div className="Dictionary">Dictionary</div>;
+  function search(event) {
+    event.preventDefault();
+    alert("Searching");
+  }
+  return (
+    <div className="container">
+      <div className="Dictionary">
+        <form onSubmit={search}>
+          <input type="search" autoFocus={true} />
+        </form>
+      </div>
+    </div>
+  );
 }
