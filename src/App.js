@@ -33,8 +33,8 @@ function App() {
           <h1>Dictionary</h1>
         </header>
         <main className="search">
-          <div className="row d-flex justify-content-end Dictionary">
-            <form className="col-sm-5 d-flex form" onSubmit={search}>
+          <div className="d-flex justify-content-center Dictionary">
+            <form className="d-flex form" onSubmit={search}>
               <input
                 type="search"
                 className="form-control"
@@ -45,9 +45,10 @@ function App() {
               <button
                 type="submit"
                 value="Search"
-                className="col d-flex btn SearchButton"
+                autoFocus="on"
+                className="d-flex btn default SearchButton"
               >
-                Search
+                <img src={searchIcon} />
               </button>
             </form>
           </div>
