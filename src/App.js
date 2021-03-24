@@ -1,6 +1,7 @@
 import Dictionary from "./Dictionary";
-import Word from "./Word.js";
-import Images from "./Images.js";
+import Word from "./Word";
+import Meaning from "./Meaning";
+import Images from "./Images";
 import "./App.css";
 
 function App() {
@@ -13,9 +14,11 @@ function App() {
         <main className="search">
           <Dictionary />
         </main>
-        <main className="main"></main>
-        <aside className="aside aside-1">
+        <main className="main">
           <Word />
+        </main>
+        <aside className="aside aside-1">
+          <Meaning />
         </aside>
         <aside className="aside aside-2">
           <Images />

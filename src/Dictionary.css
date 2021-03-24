@@ -1,3 +1,10 @@
+.App h1 {
+  padding-top: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
 .Dictionary {
 }
 
@@ -26,6 +33,35 @@
 
 .Word h2,
 .Word h3 {
+  display: flex;
+  text-align: left;
+}
+
+.Meaning ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.Meaning .RelatedWords {
+}
+
+.Meaning .MeaningWrapper {
+  padding: 1rem;
+}
+
+.Meaning .MeaningType {
+  font-weight: 400;
+}
+
+.Meaning .WordMeaning {
+  font-weight: 200;
+}
+
+.Meaning p {
   display: flex;
   text-align: left;
 }

@@ -24,9 +24,6 @@
 }
 
 @media all and (min-width: 800px) {
-  .main {
-    flex: 3 0px;
-  }
   .header {
     order: 1;
   }
@@ -45,11 +42,4 @@
   .footer {
     order: 6;
   }
-}
-
-.App h1 {
-  padding: 1.5rem;
-  text-align: center;
-  letter-spacing: 0.3rem;
-  font-weight: 600;
 }
