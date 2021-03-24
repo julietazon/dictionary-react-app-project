@@ -3,7 +3,7 @@ import React from "react";
 export default function Meaning() {
   return (
     <div className="Meaning">
-      <div classname="d-flex col-sm-6 RelatedWords">
+      <div className="d-flex col-sm-6 RelatedWords">
         <ul>
           <li>Horology</li>
           <li>Astronomy</li>
