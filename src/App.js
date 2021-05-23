@@ -76,9 +76,9 @@ function App() {
         </aside>
         <footer className="footer">
           <small>
-            <span>This project is coded by JulietaZon and is </span>
+            <span>This project is coded by JulietaZon</span>
             <br />
-            and is{" "}
+            and it's{" "}
             <span
               className="Link"
               onClick={() =>
